@@ -1,0 +1,77 @@
+<!-- 添加 meta 标签和文档类型声明 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Growth Simulation</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <audio id="success-sound" preload="auto">
+    <source src="https://anchen-maa.github.io/success-sound/success.mp3" type="audio/mp3">
+  </audio>
+  <audio id="evil-laugh" preload="auto">
+    <source src="https://anchen-maa.github.io/success-sound/evil-laugh.mp3" type="audio/mp3">
+  </audio>
+  <audio id="die-sound" preload="auto">
+    <source src="https://anchen-maa.github.io/success-sound/die.mp3" type="audio/mp3">
+  </audio>
+  <audio id="warning-sound" preload="auto">
+    <source src="https://anchen-maa.github.io/success-sound/beep-warning.mp3" type="audio/mp3">
+  </audio>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Bundle (includes Popper.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <div class="container">
+    <h1>Plant Growth Simulation</h1>
+    <div id="current-player" class="current-player"></div>
+    <div id="scoreboard" class="scoreboard">
+      <h3>Scoreboard</h3>
+      <div id="player-scores" class="player-scores"></div>
+    </div>
+    <div class="garden">
+      <!-- Rose -->
+      <div class="plant-card">
+        <h2>Rose</h2>
+        <div class="plant-image" id="rose"></div>
+        <div id="alert-container1" style="margin-top: 10px;"></div>
+        <div class="controls">
+          <button class="action-btn water-btn" id="water1">Water</button>
+          <button class="action-btn fertilize-btn" id="fertilize1">Fertilize</button>
+        </div>
+        <p>Score to win: <span id="score1">120</span></p>
+      </div>
+      <!-- Hydrangea -->
+      <div class="plant-card">
+        <h2>Hydrangea</h2>
+        <div class="plant-image" id="hydrangea"></div>
+        <div id="alert-container2" class="alert-area"></div>
+        <div class="controls">
+          <button class="action-btn water-btn" id="water2">Water</button>
+          <button class="action-btn fertilize-btn" id="fertilize2">Fertilize</button>
+        </div>
+        <p>Score to win: <span id="score2">100</span></p>
+      </div>
+      <!-- Sunflower -->
+      <div class="plant-card">
+        <h2>Sunflower</h2>
+        <div class="plant-image" id="sunflower"></div>
+        <div id="alert-container3" class="alert-area"></div>
+        <div class="controls">
+          <button class="action-btn water-btn" id="water3">Water</button>
+          <button class="action-btn fertilize-btn" id="fertilize3">Fertilize</button>
+        </div>
+        <p>Score to win: <span id="score3">80</span></p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
