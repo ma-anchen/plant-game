@@ -1,1 +1,1 @@
-# plant-game
+# party-game
